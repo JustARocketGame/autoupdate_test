@@ -6,10 +6,10 @@ import shutil
 import time
 
 # Конфигурация
-CURRENT_VERSION = "1.0.1"  # Текущая версия приложения
-VERSION_URL = "https://raw.githubusercontent.com/yourusername/yourrepo/main/version.txt"  # URL файла с версией
-UPDATE_URL = "https://raw.githubusercontent.com/yourusername/yourrepo/main/app_new.py"  # URL нового файла приложения
-APP_NAME = "app.py"  # Имя текущего приложения
+CURRENT_VERSION = "1.0.2"  # Текущая версия приложения
+VERSION_URL = "https://raw.githubusercontent.com/JustARocketGame/autoupdate_test/main/version.txt"  # URL файла с версией
+UPDATE_URL = "https://raw.githubusercontent.com/JustARocketGame/autoupdate_test/main/main.py"  # URL нового файла приложения
+APP_NAME = "main.py"  # Имя текущего приложения
 TEMP_NAME = "app_new.py"  # Временное имя загруженного файла
 
 def check_version():
@@ -65,7 +65,6 @@ def main():
     # Пример: ваш код приложения
     while True:
         print("Приложение работает. Нажмите Ctrl+C для выхода.")
-        print("Это новая версия если что :)")
         time.sleep(5)
 
 if __name__ == "__main__":
