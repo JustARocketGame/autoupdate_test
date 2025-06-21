@@ -1,4 +1,4 @@
-Запомни, мой код сейчас: import tkinter as tk
+import tkinter as tk
 from tkinter import messagebox
 import requests
 import os
@@ -9,7 +9,7 @@ import time
 import threading
 
 # Конфигурация
-CURRENT_VERSION = "1.0.3"  # Текущая версия приложения
+CURRENT_VERSION = "1.0.4"  # Текущая версия приложения
 VERSION_URL = "https://raw.githubusercontent.com/JustARocketGame/autoupdate_test/main/version.txt"  # URL файла с версией
 UPDATE_URL = "https://raw.githubusercontent.com/JustARocketGame/autoupdate_test/main/main.py"  # URL нового файла
 APP_NAME = "main.py"  # Имя текущего приложения
