@@ -6,7 +6,7 @@ import shutil
 import time
 
 # Конфигурация
-CURRENT_VERSION = "1.0.0"  # Текущая версия приложения
+CURRENT_VERSION = "1.0.1"  # Текущая версия приложения
 VERSION_URL = "https://raw.githubusercontent.com/yourusername/yourrepo/main/version.txt"  # URL файла с версией
 UPDATE_URL = "https://raw.githubusercontent.com/yourusername/yourrepo/main/app_new.py"  # URL нового файла приложения
 APP_NAME = "app.py"  # Имя текущего приложения
@@ -51,7 +51,6 @@ def apply_update():
         print(f"Ошибка установки обновления: {e}")
 
 def main():
-    print(f"Текущая версия: {CURRENT_VERSION}")
     has_update, latest_version = check_version()
     
     if has_update:
@@ -66,6 +65,7 @@ def main():
     # Пример: ваш код приложения
     while True:
         print("Приложение работает. Нажмите Ctrl+C для выхода.")
+        print("Это новая версия если что :)")
         time.sleep(5)
 
 if __name__ == "__main__":
